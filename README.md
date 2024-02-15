@@ -19,6 +19,6 @@ To access H2 database:
 
 ## Assumptions ##
 - New data will override the old one after each schedule
+- API is set to trigger every 10 seconds. This can be controlled via `request.interval` field found in application.properties
 - Timestamp is of the time where API is called, not the time provided in "updated_at" field of API response
 - H2 database (embedded) is used in this project for simplicity. To have persistent data, can consider other alternatives such as MongoDB
-- API is set to trigger every 10 seconds. This can be controlled via `request.interval` field found in application.properties
